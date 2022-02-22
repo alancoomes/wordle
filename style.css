@@ -21,6 +21,7 @@ html {
 }
 
 body {
+    background-color: var(--black);
     font-size: var(--font-size);
     font-family: var(--mono);
     padding: 0;
@@ -48,7 +49,6 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 1px black;
     width: auto;
     height: 30rem;
 }
@@ -71,3 +71,45 @@ nav ul {
 }
 
 /* Keyboard styling */
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    width: auto;
+    height: 24rem;
+    margin: 0;
+}
+
+.key-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 4rem;
+    margin: .25rem;
+}
+
+.key {
+    background-color: var(--light-gray);
+    color: white;
+    font-weight: bolder;
+    border-radius: 12%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4rem; 
+    margin: .25rem;
+    width: 2.6rem;
+    height: 4rem;
+}
+
+.enter {
+    width: 5.4rem;
+}
+
+.delete {
+    width: 3.5rem;
+}
+
