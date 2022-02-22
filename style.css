@@ -7,6 +7,7 @@
     --white: #F0FEFF;
     --mono: 'Oxygen mono', monospace;
     --sans: 'Roboto', sans-serif;
+    --font-size: 1.3rem;
 }
 
 html {
@@ -19,16 +20,26 @@ html {
   box-sizing: inherit;
 }
 
-.header {
-    border-bottom: solid 1px #171321;
+body {
+    font-size: var(--font-size);
+    font-family: var(--mono);
+    padding: 0;
+    margin: 0;
 }
 
-.header ul {
+nav {
+    border-bottom: solid 1px #171321;
+    font-size: 80%;
+    padding: .5rem 1rem
+}
+
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
+
 
 /* Middle Matrix styling*/
 
@@ -58,3 +69,5 @@ html {
     margin: 0 .5rem;
     border: solid 2px #747474;
 }
+
+/* Keyboard styling */
