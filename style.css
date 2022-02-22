@@ -1,9 +1,9 @@
 :root {
-    --black: #171321;
+    --black: #161616;
     --green: #73DE76;
     --yellow: #F4DC4C;
-    --dark-gray: #747474;
-    --light-gray: #C5C5C5;
+    --dark-gray: #52525293;
+    --light-gray: #c5c5c578;
     --white: #F0FEFF;
     --mono: 'Oxygen mono', monospace;
     --sans: 'Roboto', sans-serif;
@@ -30,8 +30,9 @@ body {
 
 nav {
     border-bottom: solid 1px #171321;
-    font-size: 80%;
-    padding: .5rem 1rem
+    font-size: 160%;
+    margin: auto;
+    padding: 0;
 }
 
 nav ul {
@@ -39,6 +40,11 @@ nav ul {
     justify-content: center;
     align-items: center;
     list-style: none;
+    color: white;
+}
+
+li h1 {
+    margin: auto;
 }
 
 
@@ -51,23 +57,22 @@ nav ul {
     align-items: center;
     width: auto;
     height: 30rem;
+    margin-top: auto;
 }
 
 .matrix .row {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: .5rem;
     width: 40rem;
     height: 20rem;
-    border: dashed 1px red;
 }
 
 .matrix .column {
-    width: 5rem;
-    height: 100%;
-    margin: 0 .5rem;
-    border: solid 2px #747474;
+    width: 4rem;
+    height: 80%;
+    margin: 0 .15rem;
+    border: solid 2px var(--dark-gray);
 }
 
 /* Keyboard styling */
